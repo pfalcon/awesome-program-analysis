@@ -84,9 +84,6 @@ Aycock/Horspool
   ducible control-flow graphs, and produces minimal solutions for reducible
   ones.
 
-  * 2016 Verified Construction of Static Single Assignment Form, Sebastian Buchwald,
-    Denis Lohner, Sebastian Ullrich
-
 ### For Non-Reducible CFGs (i.e. general case)
 
 * 1991 R. Cytron, J. Ferrante, B. K. Rosen, M. N. Wegman, and F. K. Zadeck. Efficiently
@@ -132,3 +129,5 @@ Aycock/Horspool
   is in minimal and pruned SSA form. In spite of its simplicity,
   the runtime of the algorithm is on par with Cytron et al.’s algorithm.
 
+  * 2016 Verified Construction of Static Single Assignment Form, Sebastian Buchwald,
+    Denis Lohner, Sebastian Ullrich
