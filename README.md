@@ -115,4 +115,20 @@ Aycock/Horspool
 
   > Sreedhar and Gao [24] devised a linear-time algorithm for φ-function
   placement using DJ-graphs, a data structure which combines the dominator tree
-  with information about where data flow in the program merges.
+  with information about where data flow in the program merges.\
+  
+* 2013 M. Braun, S. Buchwald, S. Hack, R. Leißa, C. Mallon, and
+  A. Zwinkau. Simple and efficient construction of static single assignment
+  form. In R. Jhala and K. Bosschere, editors, Compiler Construction,
+  volume 7791 of Lecture Notes in Computer Science, pp.
+  102–122. Springer, 2013. doi: 10.1007/978-3-642-37051-9_6.
+  
+  > Braun, et al present a simple SSA construction algorithm, which allows
+  direct translation from an abstract syntax tree or bytecode into an
+  SSA-based intermediate representation. The algorithm requires no prior
+  analysis and ensures that even during construction the intermediate representation
+  is in SSA form. This allows the application of SSA-based optimizations
+  during construction. After completion, the intermediate representation
+  is in minimal and pruned SSA form. In spite of its simplicity,
+  the runtime of the algorithm is on par with Cytron et al.’s algorithm.
+
