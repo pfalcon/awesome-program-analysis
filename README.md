@@ -18,13 +18,27 @@ Forms:
     > block boundary, and put φ-functions for every variable in every block.
 * Minimal
   * This is usually what's sought for SSA form, where there're no superflous
-* Semi-pruned
+    phi functions, based only only graph properties of the CFG.
 * Pruned
-  * Minimal form with dead Phi functions removed (i.e. Phi functions which
-    reference which reference variables which will no longer be used in the
-    rest of program; they just define dead variables likewise). Variable
-    liveness is required for construction, so is considered expensive to
-    construct.
+  * Minimal form can still have dead phi functions, i.e. phi functions which
+    reference variables which are not actually used in the rest of the program.
+    Note that sucg references is problematic, as it artificially extends live
+    ranges of such variables. Likewise, it defines new variables which aren't
+    really live. The pruned SSA form is devoide of the dead phi functions. 2
+    obvious way to achieve this: a) perform live variable analysis prior to
+    SSA construction and use it to avoid placing dead phi functions; b) run
+    dead code elimination (DCE) pass after the construction. Due to these
+    additional passes, pruned SSA construction is more expensive than just
+    the minimal form.
+* Semi-pruned
+  * Sometimes called "Briggs-Minimal" form. A compromise between fully
+    pruned and minimal form. From Wikipedia:
+    > Semi-pruned SSA form[6] is an attempt to reduce the number of Φ
+    functions without incurring the relatively high cost of computing
+    live variable information. It is based on the following observation:
+    if a variable is never live upon entry into a basic block, it never
+    needs a Φ function. During SSA construction, Φ functions for any
+    "block-local" variables are omitted.
 
 History
 -------
