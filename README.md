@@ -145,3 +145,10 @@ Aycock/Horspool
 
   * 2016 Verified Construction of Static Single Assignment Form, Sebastian Buchwald,
     Denis Lohner, Sebastian Ullrich
+
+
+Alias Analysis
+==============
+
+* 1994 [Program Analysis and Specialization for the C Programming Language](http://www.cs.cornell.edu/courses/cs711/2005fa/papers/andersen-thesis94.pdf),
+  Lars Andersen
