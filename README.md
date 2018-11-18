@@ -11,7 +11,7 @@ Intermediate Representation Forms/Types
 SSA Form
 ========
 
-Forms:
+Types:
 * Fully maximal
   * Defined e.g. by Appel:
     > A really crude approach is to split every variable at every basic-
@@ -56,6 +56,15 @@ Forms:
     if a variable is never live upon entry into a basic block, it never
     needs a Φ function. During SSA construction, Φ functions for any
     "block-local" variables are omitted.
+
+Summing up: There's one and true SSA type - the maximal one. It has a
+straightforward, easy to understand construction algorithm which does
+not dependent on any other special algorithms. Running a generic
+DCE algorithm on it will remove any redundancies of the maximal form
+(oftentimes, together with other dead code). All other types are
+nothing but optimizations of the maximal forms, allowing to generate
+less phi functions, so less are removed later. Optimizations are useful,
+but the usual warning about premature optimization applies.
 
 History
 -------
