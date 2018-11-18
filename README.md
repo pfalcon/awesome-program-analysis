@@ -164,6 +164,20 @@ Aycock/Horspool
     Denis Lohner, Sebastian Ullrich
 
 
+Control Flow Analysis
+=====================
+
+According to 1997 Muchnick:
+
+* Analysis on "raw" graphs, using dominators, the iterative dataflow algorithms
+* Interval Analysis, which then allows to use adhoc optimized dataflow analysis.
+  Variants in the order of advanceness:
+  * The simplest form is T1-T2 reduction
+  * Maximal intervals analysis
+  * Minimal intervals analysis
+  * Structural analysis
+
+
 Alias Analysis
 ==============
 
