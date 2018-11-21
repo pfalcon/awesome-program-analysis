@@ -1,3 +1,22 @@
+Names
+=====
+
+As a dedication:
+
+We study Program Analysis because it's objective and complex phenomena of
+nature devoid of subjectivities of the mankind. But then, we can't separate
+it from the work of great human minds who laid the paths in this area, whose
+steps we now follow.
+
+These are people who contributed to the Program Analysis field of study
+(with all the apology to many more who are not listed here). The emphasis
+here is on well-knownness and public availability of their works:
+
+* Gregory Chaitin
+* Jeffrey Ullman
+* Alfred Aho
+* Keith Cooper
+* Preston Briggs
 
 Intermediate Representation Forms/Types
 =======================================
