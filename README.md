@@ -138,10 +138,9 @@ Aycock/Horspool
 
 * 2000 Simple Generation of Static Single-Assignment Form, 2000, John Aycock and Nigel Horspool
 
-  > In this paper we present a new, simple method
-  for converting to SSA form, which produces correct solutions for nonre-
-  ducible control-flow graphs, and produces minimal solutions for reducible
-  ones.
+  > In this paper we present a new, simple method for converting to SSA
+  form, which produces correct solutions for nonreducible control-flow
+  graphs, and produces minimal solutions for reducible ones.
 
 ### For Non-Reducible CFGs (i.e. general case)
 
