@@ -33,8 +33,9 @@ SSA Form
 Types:
 * Fully maximal
   * Defined e.g. by Appel:
-    > A really crude approach is to split every variable at every basic-
-    > block boundary, and put φ-functions for every variable in every block.
+    > A really crude approach is to split every variable at every basic-block
+    > boundary, and put φ-functions for every variable in every block.
+
     Maximal form is the most intuitive form for construction, gives the simplest
     algorithms for both phi insertion and variable renaming phases of the
     construction.
@@ -113,7 +114,7 @@ Barry Rosen; Mark N. Wegman; F. Kenneth Zadeck (1988). "Global value numbers and
 Construction Algorithms
 -----------------------
 
-Based on exceprts from "Simple Generation of Static Single-Assignment Form", 
+Based on excerpts from "Simple Generation of Static Single-Assignment Form",
 Aycock/Horspool
 
 ### For Reducible CFGs (i.e. special case)
