@@ -250,6 +250,27 @@ Alias Analysis
   Lars Andersen
 
 
+Register Allocation
+===================
+
+Terms:
+
+* Decoupled allocator - In classic register allocation algorithms, variables
+  assignment to registers and spilling of non-assignable variables are
+  tightly-coupled, interleaving phases of the single algorithm. In a decoupled
+  allocator, these phases are well separated, with spilling algorithm first
+  selecting and rewriting spilling variables, and assignment algorithm then
+  dealing with the remaining variables. Most of decoupled register allocators
+  are SSA-based, though recent developments also include decoupled allocators
+  for standard imperative programs.
+* Chordal graph - A type of graph, having a property that it can be colored
+  in polynomial time (whereas generic graphs require NP time for coloring).
+  Interference graphs of SSA programs are chordal. (Note that arbitrary
+  pre-coloring and/or register aliasing support for chordal graphs, as
+  required for real-world register allocation, may push complexity back into
+  NP territory).
+
+
 Projects
 ========
 
