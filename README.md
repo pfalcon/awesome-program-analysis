@@ -91,6 +91,18 @@ Classification of SSA form types:
       needs a Φ function. During SSA construction, Φ functions for any
       "block-local" variables are omitted.
   * Not pruned
+* Axis 2: Conventional vs Transformed SSA
+  * Conventional
+    * Allows for easy deconstruction algorithm (literally, just drop
+      SSA variables subscripts and remove Phi functions). Usually,
+      after construction, SSA is in conventional form (if during
+      construction, additional optimizations were not performed).
+  * Transformed
+    * Some optimizations applied to an SSA program make simple deconstruction
+      algorithm outlined above not possible (not producing correct
+      results). This is known as "transformed SSA". There're algorithms
+      to convert transformed SSA into conventional form.
+
 
 Summing up: There's one and true SSA type - the maximal one. It has a
 straightforward, easy to understand construction algorithm which does
