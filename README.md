@@ -239,3 +239,7 @@ Academic projects
     * Zephyr ASDL now lives at http://asdl.sourceforge.net/
       * Zephyr ASDL description used in Python: https://github.com/python/cpython/blob/master/Parser/Python.asdl
       * Oilshell blog post dedicated to Zephyr ASDL: https://www.oilshell.org/blog/2016/12/11.html
+
+---
+This list is compiled and maintained by Paul Sokolovsky, and released under
+[Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).
