@@ -30,60 +30,75 @@ Intermediate Representation Forms/Types
 SSA Form
 ========
 
-Types:
-* Fully maximal
-  * Defined e.g. by Appel:
-    > A really crude approach is to split every variable at every basic-block
-    > boundary, and put φ-functions for every variable in every block.
+Classification of SSA form types:
 
-    Maximal form is the most intuitive form for construction, gives the simplest
-    algorithms for both phi insertion and variable renaming phases of the
-    construction.
-* Optimized maximal
-  * An obvious optimization of avoiding placing phi functions in blocks with
-    a single predecessor, as they never needed there. While cuts the number
-    of phi functions, makes renaming algorithm a bit more complex: while for
-    maximal form renaming could process blocks in arbitrary order (because
-    each of program's variables has a local definition in every basic block),
-    optimized maximal form requires processing predecessor first for each
-    such single-predecessor block.
-* Minimal
-  * This is usually what's sought for SSA form, where there're no superflous
-    phi functions, based only on graph properties of the CFG (with consulting
-    semantics of the underlying program).
-* Pruned
-  * Minimal form can still have dead phi functions, i.e. phi functions which
-    reference variables which are not actually used in the rest of the program.
-    Note that such references are problematic, as they artificially extend live
-    ranges of referenced variables. Likewise, it defines new variables which
-    aren't really live. The pruned SSA form is devoid of the dead phi functions.
-    Two obvious way to achieve this: a) perform live variable analysis prior to
-    SSA construction and use it to avoid placing dead phi functions; b) run
-    dead code elimination (DCE) pass after the construction (which requires
-    live variable analysis first, this time on SSA form of the program already).
-    Due to these additional passes, pruned SSA construction is more expensive
-    than just the minimal form. Note that if we intend to run DCE pass on the
-    program anyway, which is often happens, we don't really need to be concerned
-    to *construct* pruned form, as we will get it after the DCE pass "for free".
-    Except of course that minimal and especially maximal form require more
-    space to store and more time to go thru it during DCE.
-* Semi-pruned
-  * Sometimes called "Briggs-Minimal" form. A compromise between fully
-    pruned and minimal form. From Wikipedia:
-    > Semi-pruned SSA form[6] is an attempt to reduce the number of Φ
-    functions without incurring the relatively high cost of computing
-    live variable information. It is based on the following observation:
-    if a variable is never live upon entry into a basic block, it never
-    needs a Φ function. During SSA construction, Φ functions for any
-    "block-local" variables are omitted.
+* Axis 1: Minimality. There're 2 poles: fully minimal vs fully maximal SSA form.
+  Between those, there's continuum of intermediate cases.
+  * Fully maximal
+    * Defined e.g. by Appel:
+      > A really crude approach is to split every variable at every basic-block
+      > boundary, and put φ-functions for every variable in every block.
+
+      Maximal form is the most intuitive form for construction, gives the simplest
+      algorithms for both phi insertion and variable renaming phases of the
+      construction.
+  * Optimized maximal
+    * An obvious optimization of avoiding placing phi functions in blocks with
+      a single predecessor, as they never needed there. While cuts the number
+      of phi functions, makes renaming algorithm a bit more complex: while for
+      maximal form renaming could process blocks in arbitrary order (because
+      each of program's variables has a local definition in every basic block),
+      optimized maximal form requires processing predecessor first for each
+      such single-predecessor block.
+  * Minimal for reducible CFGs
+    * Some algorithms (e.g. optimized for simplicity) naturally produce minimal
+      form only for reducible CFGs. Applied to non-reducible CFGs, they may
+      generate extra Phi functions. There're usually extensions to such
+      algorithms to generate minimal form even for non-reducible CFGs too (but
+      such extensions may add noticeable complexity to otherwise "simple"
+      algorithm). Examplem of such an algorithm ins 2013 Braun et al.
+  * Fully minimal
+    * This is usually what's sought for SSA form, where there're no superflous
+      phi functions, based only on graph properties of the CFG (with consulting
+      semantics of the underlying program).
+* Axis 2: Prunedness. As argued (implied) by 2013 Braun et al., prunedness is
+  a separate trait from minimality. E.g., their algorithm constructs not fully
+  minimal, yet pruned form. Between pruned and non-pruned forms, there're
+  intermediate types again.
+  * Pruned
+    * Minimal form can still have dead phi functions, i.e. phi functions which
+      reference variables which are not actually used in the rest of the program.
+      Note that such references are problematic, as they artificially extend live
+      ranges of referenced variables. Likewise, it defines new variables which
+      aren't really live. The pruned SSA form is devoid of the dead phi functions.
+      Two obvious way to achieve this: a) perform live variable analysis prior to
+      SSA construction and use it to avoid placing dead phi functions; b) run
+      dead code elimination (DCE) pass after the construction (which requires
+      live variable analysis first, this time on SSA form of the program already).
+      Due to these additional passes, pruned SSA construction is more expensive
+      than just the minimal form. Note that if we intend to run DCE pass on the
+      program anyway, which is often happens, we don't really need to be concerned
+      to *construct* pruned form, as we will get it after the DCE pass "for free".
+      Except of course that minimal and especially maximal form require more
+      space to store and more time to go thru it during DCE.
+  * Semi-pruned
+    * Sometimes called "Briggs-Minimal" form. A compromise between fully
+      pruned and minimal form. From Wikipedia:
+      > Semi-pruned SSA form[6] is an attempt to reduce the number of Φ
+      functions without incurring the relatively high cost of computing
+      live variable information. It is based on the following observation:
+      if a variable is never live upon entry into a basic block, it never
+      needs a Φ function. During SSA construction, Φ functions for any
+      "block-local" variables are omitted.
+  * Not pruned
 
 Summing up: There's one and true SSA type - the maximal one. It has a
 straightforward, easy to understand construction algorithm which does
 not dependent on any other special algorithms. Running a generic
 DCE algorithm on it will remove any redundancies of the maximal form
 (oftentimes, together with other dead code). All other types are
-nothing but optimizations of the maximal forms, allowing to generate
-less phi functions, so less are removed later. Optimizations are useful,
+nothing but optimizations of the maximal form, allowing to generate
+less Phi functions, so less are removed later. Optimizations are useful,
 but the usual warning about premature optimization applies.
 
 History
