@@ -211,3 +211,31 @@ Alias Analysis
 
 * 1994 [Program Analysis and Specialization for the C Programming Language](http://www.cs.cornell.edu/courses/cs711/2005fa/papers/andersen-thesis94.pdf),
   Lars Andersen
+
+
+Projects
+========
+
+Academic projects
+-----------------
+
+* [SUIF1](https://suif.stanford.edu/suif/suif1/index.html) - 1994, Stanford University
+  * "The SUIF (Stanford University Intermediate Format) 1.x compiler,
+    developed by the Stanford Compiler Group, is a free infrastructure
+    designed to support collaborative research in optimizing and
+    parallelizing compilers."
+* [SUIF2](https://suif.stanford.edu/suif/suif2/index.html) - 1999, Stanford University
+  * "A new version of the SUIF compiler system, a free infrastructure
+    designed to support collaborative research in optimizing and
+    parallelizing compilers. It is currently in the beta test stage
+    of development."
+* Machine SUIF aka machsuif - "Fork" of SUIF1/SUIF2, Harvard University
+  * https://web.archive.org/web/20090630022924/http://www.eecs.harvard.edu/machsuif/software/software.html (via archive.org)
+  * http://www.cs.cmu.edu/afs/cs.cmu.edu/academic/class/15745-s02/public/doc/overview.html
+* [NCI (National Compiler Infrastructure)](https://suif.stanford.edu/suif/NCI/) ([archive.org](https://web.archive.org/web/20090901021758/http://www.cs.virginia.edu/nci/)) - 1998-200x? Collaborative project among US universities
+  * "the National Compiler Infrastructure project has two components:"
+  * SUIF
+  * [Zephyr](https://web.archive.org/web/20090310184351/http://www.cs.virginia.edu/zephyr/)
+    * Zephyr ASDL now lives at http://asdl.sourceforge.net/
+      * Zephyr ASDL description used in Python: https://github.com/python/cpython/blob/master/Parser/Python.asdl
+      * Oilshell blog post dedicated to Zephyr ASDL: https://www.oilshell.org/blog/2016/12/11.html
