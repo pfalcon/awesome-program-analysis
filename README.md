@@ -102,6 +102,16 @@ Classification of SSA form types:
       algorithm outlined above not possible (not producing correct
       results). This is known as "transformed SSA". There're algorithms
       to convert transformed SSA into conventional form.
+* Axis 3: Strict vs non-strict SSA
+  * Non-strict SSA allows some variables to be undefined on some paths
+    (just like conventional imperative programs).
+  * Strict form requires each use to be dominated by definition. This
+    in turn means that every variable must be explicitly initialized.
+    Non-strict program can be trivially converted into strict form, by
+    initializing variables with special values, like "undef" for truly
+    undefined values, "param" for function paramters, etc. Most of SSA
+    algorithms requires/assume strict SSA form, so non-strict is not
+    further considered.
 
 
 Summing up: There's one and true SSA type - the maximal one. It has a
