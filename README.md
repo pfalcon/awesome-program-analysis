@@ -30,7 +30,13 @@ Intermediate Representation Forms/Types
 SSA Form
 ========
 
-Classification of SSA form types:
+Put simple, in an SSA program, each variable is (statically, syntactically)
+assigned only once.
+
+Wikipedia: https://en.wikipedia.org/wiki/Static_single_assignment_form
+
+Classification of SSA types
+---------------------------
 
 * Axis 1: Minimality. There're 2 poles: fully minimal vs fully maximal SSA form.
   Between those, there's continuum of intermediate cases.
