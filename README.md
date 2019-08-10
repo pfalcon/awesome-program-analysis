@@ -228,6 +228,12 @@ Aycock/Horspool
   * 2016 Verified Construction of Static Single Assignment Form, Sebastian Buchwald,
     Denis Lohner, Sebastian Ullrich
 
+Deconstruction Algorithms
+-------------------------
+
+TBD. Some papers in the "Construction Algorithms" section also include
+information/algorithms on deconstruction.
+
 
 Control Flow Analysis
 =====================
