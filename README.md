@@ -293,6 +293,8 @@ Alias Analysis
 Register Allocation
 ===================
 
+Wikipedia: https://en.wikipedia.org/wiki/Register_allocation
+
 Terms:
 
 * Decoupled allocator - In classic register allocation algorithms, variables
