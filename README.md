@@ -35,6 +35,7 @@ here is on well-knownness and public availability of their works:
 * Keith Cooper
 * Preston Briggs
 * [Sebastian Hack](http://compilers.cs.uni-saarland.de/people/hack/)
+* [Florent Bouchez], thesis: 2009 "A Study of Spilling and Coalescing in Register Allocation as Two Separate Phases"
 
 Intermediate Representation Forms/Types
 =======================================
