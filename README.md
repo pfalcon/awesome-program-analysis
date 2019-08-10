@@ -35,6 +35,17 @@ assigned only once.
 
 Wikipedia: https://en.wikipedia.org/wiki/Static_single_assignment_form
 
+General reference: "SSA Book" aka "Static Single Assignment Book" aka
+"SSA-based Compiler Design" is open, collaborative effort of many SSA
+researchers to write a definitive reference for all things SSA.
+* Direct download (new versions are published):
+  http://ssabook.gforge.inria.fr/latest/book-full.pdf
+* Download directory:
+  http://ssabook.gforge.inria.fr/latest/
+* GForge project: https://gforge.inria.fr/projects/ssabook/
+* Subversion repository:
+  https://gforge.inria.fr/scm/browser.php?group_id=1950
+
 Classification of SSA types
 ---------------------------
 
