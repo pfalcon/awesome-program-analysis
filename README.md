@@ -114,14 +114,14 @@ Classification of SSA form types:
     further considered.
 
 
-Summing up: There's one and true SSA type - the maximal one. It has a
+Discussion: There's one and true SSA type - the maximal one. It has a
 straightforward, easy to understand construction algorithm which does
 not dependent on any other special algorithms. Running a generic
 DCE algorithm on it will remove any redundancies of the maximal form
 (oftentimes, together with other dead code). All other types are
-nothing but optimizations of the maximal form, allowing to generate
-less Phi functions, so less are removed later. Optimizations are useful,
-but the usual warning about premature optimization applies.
+optimizations of the maximal form, allowing to generate less Phi
+functions, so less are removed later. Optimizations are useful, but
+the usual warning about premature optimization applies.
 
 History
 -------
