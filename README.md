@@ -34,6 +34,7 @@ here is on well-knownness and public availability of their works:
 * Alfred Aho
 * Keith Cooper
 * Preston Briggs
+* [Sebastian Hack](http://compilers.cs.uni-saarland.de/people/hack/)
 
 Intermediate Representation Forms/Types
 =======================================
