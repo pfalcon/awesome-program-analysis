@@ -44,6 +44,8 @@ here is on well-knownness and public availability of their works:
   * thesis: 1995 "Combining Analyses, Combining Optimizations"
 * [Sebastian Hack](http://compilers.cs.uni-saarland.de/people/hack/)
   * thesis: 2006 "Register Allocation for Programs in SSA Form"
+* [Sebastian Buchwald](https://pp.ipd.kit.edu/personhp/sebastian_buchwald.php)
+  * thesis: 2008 "Befehlsauswahl auf expliziten Abhangigkeitsgraphen" in German, "Instruction selection on explicit dependency graphs"
 * [Florent Bouchez](http://florent.bouchez.free.fr/)
   * thesis: 2009 "A Study of Spilling and Coalescing in Register Allocation as Two Separate Phases"
 * [Benoit Boissinot](https://bboissin.appspot.com/)
