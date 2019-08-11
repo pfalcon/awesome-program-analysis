@@ -34,6 +34,10 @@ here is on well-knownness and public availability of their works:
 * Alfred Aho
 * [Keith Cooper](http://keith.rice.edu/)
   * thesis: 1983 "Interprocedural Data Flow Analysis in a Programming Environment"
+* [Andrew Appel](https://www.cs.princeton.edu/~appel/)
+  * thesis: 1985 "Compile-time Evaluation and Code Generation in Semantics-Directed Compilers"
+  * book 1998: "Modern Compiler Implementation in ML/Java/C"
+  * 2000: [Optimal Register Coalescing Challenge](https://www.cs.princeton.edu/~appel/coalesce/)
 * [Preston Briggs](https://genealogy.math.ndsu.nodak.edu/id.php?id=94538)
   * thesis: 1992 "Register Allocation via Graph Coloring"
 * [Clifford Click](http://cliffc.org/blog/sample-page/) [@cliffclick](https://github.com/cliffclick)
