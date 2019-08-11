@@ -36,6 +36,7 @@ here is on well-knownness and public availability of their works:
 * Preston Briggs
 * [Sebastian Hack](http://compilers.cs.uni-saarland.de/people/hack/), thesis: 2006 "Register Allocation for Programs in SSA Form"
 * [Florent Bouchez], thesis: 2009 "A Study of Spilling and Coalescing in Register Allocation as Two Separate Phases"
+* [Benoit Boissinot](https://bboissin.appspot.com/), thesis: 2010 "Towards an SSA based compiler back-end: some interesting properties of SSA and its extensions"
 
 Intermediate Representation Forms/Types
 =======================================
