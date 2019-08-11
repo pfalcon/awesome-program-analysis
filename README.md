@@ -314,6 +314,18 @@ Terms:
   required for real-world register allocation, may push complexity back into
   NP territory).
 
+Conventional Register Allocation
+--------------------------------
+
+TBD
+
+Register Allocation on SSA Form
+-------------------------------
+
+* [University of Saarland page on SSA register allocation](http://compilers.cs.uni-saarland.de/projects/ssara/)
+  gives a good overview of Register Allocation area, and how SSA form makes
+  some matters easier.
+
 
 Projects
 ========
