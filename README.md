@@ -3,6 +3,7 @@ Program Analysis and Transformation Survey and Links
 
 Table of Contents:
 
+* [Glossary](#glossary)
 * [Names](#names)
 * [Intermediate Representation Forms/Types](#intermediate-representation-formstypes)
 * [SSA Form](#ssa-form)
@@ -14,6 +15,14 @@ Table of Contents:
 * [Alias Analysis](#alias-analysis)
 * [Register Allocation](#register-allocation)
 * [Projects](#projects)
+
+Glossary
+========
+
+* Critical edge (of a graph) - Edge between a vertex which also has other successors and a vertex which has other predecessors.
+  [(wikipedia)](https://en.wikipedia.org/wiki/Control-flow_graph#Special_edges)
+* DCE - Dead Code Elimination [(wikipedia)](https://en.wikipedia.org/wiki/Dead_code_elimination)
+* Graph - [(wikipedia)](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics))
 
 Names
 =====
