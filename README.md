@@ -44,6 +44,8 @@ here is on well-knownness and public availability of their works:
   * thesis: 2009 "A Study of Spilling and Coalescing in Register Allocation as Two Separate Phases"
 * [Benoit Boissinot](https://bboissin.appspot.com/)
   * thesis: 2010 "Towards an SSA based compiler back-end: some interesting properties of SSA and its extensions"
+* Quentin Colombet
+  * thesis 2012: "Decoupled (SSA-based) Register Allocators: from Theory to Practice, Coping with Just-In-Time Compilation and Embedded Processors Constraints"
 
 Intermediate Representation Forms/Types
 =======================================
