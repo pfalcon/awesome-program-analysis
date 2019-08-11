@@ -36,6 +36,8 @@ here is on well-knownness and public availability of their works:
   * thesis: 1983 "Interprocedural Data Flow Analysis in a Programming Environment"
 * [Preston Briggs](https://genealogy.math.ndsu.nodak.edu/id.php?id=94538)
   * thesis: 1992 "Register Allocation via Graph Coloring"
+* [Clifford Click](http://cliffc.org/blog/sample-page/) [@cliffclick](https://github.com/cliffclick)
+  * thesis: 1995 "Combining Analyses, Combining Optimizations"
 * [Sebastian Hack](http://compilers.cs.uni-saarland.de/people/hack/)
   * thesis: 2006 "Register Allocation for Programs in SSA Form"
 * [Florent Bouchez](http://florent.bouchez.free.fr/)
