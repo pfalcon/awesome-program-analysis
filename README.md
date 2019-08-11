@@ -23,6 +23,12 @@ Glossary
   [(wikipedia)](https://en.wikipedia.org/wiki/Control-flow_graph#Special_edges)
 * DCE - Dead Code Elimination [(wikipedia)](https://en.wikipedia.org/wiki/Dead_code_elimination)
 * Graph - [(wikipedia)](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics))
+* LOLSSA - *[ this entry is a joke! due to [lolspeak](https://www.researchgate.net/profile/Jill_Vaughan/publication/323620982_I_can_haz_language_play_The_construction_of_language_and_identity_in_LOLspeak/links/5aa089e8aca272d448b178b6/I-can-haz-language-play-The-construction-of-language-and-identity-in-LOLspeak.pdf) ]*
+  a) SSA as defined in some early papers on the matter, especially
+  in the part of out-of-SSA conversion (see epigraph to
+  [SSA Deconstruction](#deconstruction-algorithms) section below);
+  b) a similar version of SSA used in some (oftentimes amateur) projects
+  decades later.
 
 Names
 =====
