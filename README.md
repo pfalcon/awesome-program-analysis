@@ -34,7 +34,7 @@ here is on well-knownness and public availability of their works:
 * Alfred Aho
 * Keith Cooper
 * Preston Briggs
-* [Sebastian Hack](http://compilers.cs.uni-saarland.de/people/hack/)
+* [Sebastian Hack](http://compilers.cs.uni-saarland.de/people/hack/), thesis: 2006 "Register Allocation for Programs in SSA Form"
 * [Florent Bouchez], thesis: 2009 "A Study of Spilling and Coalescing in Register Allocation as Two Separate Phases"
 
 Intermediate Representation Forms/Types
