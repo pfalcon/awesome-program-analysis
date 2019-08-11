@@ -33,7 +33,8 @@ here is on well-knownness and public availability of their works:
 * Jeffrey Ullman
 * Alfred Aho
 * Keith Cooper
-* Preston Briggs
+* [Preston Briggs](https://genealogy.math.ndsu.nodak.edu/id.php?id=94538)
+  * thesis: 1992 "Register Allocation via Graph Coloring"
 * [Sebastian Hack](http://compilers.cs.uni-saarland.de/people/hack/), thesis: 2006 "Register Allocation for Programs in SSA Form"
 * [Florent Bouchez], thesis: 2009 "A Study of Spilling and Coalescing in Register Allocation as Two Separate Phases"
 * [Benoit Boissinot](https://bboissin.appspot.com/), thesis: 2010 "Towards an SSA based compiler back-end: some interesting properties of SSA and its extensions"
