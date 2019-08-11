@@ -44,6 +44,8 @@ here is on well-knownness and public availability of their works:
   * thesis: 1995 "Combining Analyses, Combining Optimizations"
 * [Sebastian Hack](http://compilers.cs.uni-saarland.de/people/hack/)
   * thesis: 2006 "Register Allocation for Programs in SSA Form"
+* [Matthias Braun](https://pp.ipd.kit.edu/personhp/matthias_braun.php)
+  * thesis: 2006 "Heuristisches Auslagern in einem SSA-basierten Registerzuteiler" in German, "Heuristic spilling in an SSA-based register allocator"
 * [Sebastian Buchwald](https://pp.ipd.kit.edu/personhp/sebastian_buchwald.php)
   * thesis: 2008 "Befehlsauswahl auf expliziten Abhangigkeitsgraphen" in German, "Instruction selection on explicit dependency graphs"
 * [Florent Bouchez](http://florent.bouchez.free.fr/)
