@@ -285,6 +285,38 @@ Aycock/Horspool
 Deconstruction Algorithms
 -------------------------
 
+---
+Epigraph (due to [Boissinot](https://bboissin.appspot.com/static/upload/bboissin-outssa-cgo09-slides.pdf), slide 20):
+
+*Naively, a k-input Phi-function at entrance to a node X can
+be replaced by k ordinary assignments, one at the end of
+each control flow predecessor of X. This is always correct...*
+
+-- *Cytron, Ferrante, Rosen, Wegman, Zadeck (1991)
+Efficiently computing static single assignment form and the control
+dependence graph.*
+
+> Cytron et al. (1991): Copies in predecessor basic blocks.
+
+Incorrect!
+* Bad understanding of parallel copies
+* Bad understanding of critical edges and interference
+
+> Briggs et al. (1998)
+
+Both problems identified. General correctness unclear.
+
+> Sreedhar et al. (1999)
+
+Correct but:
+* handling of complex branching instructions unclear
+* interplay with coalescing unclear
+* "virtualization" hard to implement
+
+Many SSA optimizations turned off in gcc and Jikes.
+
+---
+
 TBD. Some papers in the "Construction Algorithms" section also include
 information/algorithms on deconstruction.
 
