@@ -57,6 +57,10 @@ here is on well-knownness and public availability of their works:
   * thesis: 1992 "Register Allocation via Graph Coloring"
 * [Clifford Click](http://cliffc.org/blog/sample-page/) [@cliffclick](https://github.com/cliffclick)
   * thesis: 1995 "Combining Analyses, Combining Optimizations"
+* [John Aycock](https://pages.cpsc.ucalgary.ca/~aycock/)
+  * thesis: 2001 "Practical Earley Parsing and the SPARK Toolkit"
+  * Hacked on Python compilation: [[1]](https://pages.cpsc.ucalgary.ca/~aycock/papers/ucpy.pdf), [[2]](https://prism.ucalgary.ca/handle/1880/45370), [[3]](https://pages.cpsc.ucalgary.ca/~aycock/papers/ipc7-211.pdf), [[4]](https://pages.cpsc.ucalgary.ca/~aycock/papers/ipc8.pdf)
+  * Now hacks on retrogaming: [[1]](https://www.amazon.com/Retrogame-Archeology-Exploring-Computer-Games/dp/3319300024), [[2]](https://www.youtube.com/watch?v=WV259iLon1M)
 * [Sebastian Hack](http://compilers.cs.uni-saarland.de/people/hack/)
   * thesis: 2006 "Register Allocation for Programs in SSA Form"
 * [Matthias Braun](https://pp.ipd.kit.edu/personhp/matthias_braun.php) [@MatzeB](https://github.com/MatzeB)
