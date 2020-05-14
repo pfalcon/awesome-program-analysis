@@ -189,7 +189,7 @@ Classification of SSA types
 
 Discussion: There's one and true SSA type - the maximal one. It has a
 straightforward, easy to understand construction algorithm which does
-not dependent on any other special algorithms. Running a generic
+not depend on any other special algorithms. Running a generic
 DCE algorithm on it will remove any redundancies of the maximal form
 (oftentimes, together with other dead code). All other types are
 optimizations of the maximal form, allowing to generate less Phi
