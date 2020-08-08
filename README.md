@@ -339,6 +339,37 @@ Many SSA optimizations turned off in gcc and Jikes.
 TBD. Some papers in the "Construction Algorithms" section also include
 information/algorithms on deconstruction.
 
+Converting out of SSA is effectively elimination (lowering) of Phi
+functions. (Note that Phi functions may appear in a program which is
+not (purely) SSA, so Phi elimination is formally more general process
+than conversion out of SSA.)
+
+There are 2 general ways to eliminate Phi functions:
+
+1. **Requires splitting critical edges, but doesn't introduce new variables
+   and extra copies**:
+   Treat Phi functions as parallel copies on the incoming edges. This
+   requires splitting critical edges. Afterwards, parallel copies are
+   sequentialized.
+2. **Does not require splitting critical edges, but introduces new
+   variables and extra copies to them which then would need to be
+   coalesced**:
+   For Conventional SSA (CSSA), result and arguments of a Phi can
+   be just renamed to the same name (throughout the program), and the Phi
+   removed. This is because arguments and result do not interfere among
+   themselves (CSSA is produced by normal SSA construction algorithms, which
+   don't perform copy propagation and value numbering during construction).
+   Arbitrary SSA (or Transformed SSA, TSSA) can be converted to CSSA
+   by splitting live ranges of Phi arguments and results, by renaming them
+   to new variables, then inserting parallel copy of old argument variables
+   to new at the end of each predecessor, and parallel copy of all Phi
+   results, after all the Phi functions of the current basic block. These
+   parallel copies (usually) can be sequentialized trivially (so oftentimes
+   even not treated as parallel in the literature). This method does not
+   require splitting critical edges, but introduces many unnecessary copies
+   (intuitively, for non-interfering Phi variables), which then need to
+   be optimized by coalescing (or alternatively, unneeded copies should
+   not be introduced in the first place).
 
 Control Flow Analysis
 =====================
